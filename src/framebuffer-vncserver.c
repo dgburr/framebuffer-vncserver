@@ -138,7 +138,7 @@ static void init_fb_server(int argc, char **argv)
 	vncscr->port = VNC_PORT;
 
 //	vncscr->kbdAddEvent = keyevent;
-//	vncscr->ptrAddEvent = ptrevent;
+	vncscr->ptrAddEvent = rfbDefaultPtrAddEvent;
 
 	rfbInitServer(vncscr);
 
